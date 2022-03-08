@@ -13,6 +13,7 @@ const arrayToCSVString = array => {
 
 const csvStringToArray = string => {
   // your code here
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
