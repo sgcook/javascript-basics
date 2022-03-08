@@ -25,6 +25,7 @@ function one(a, b) {
 
 function truthiness(a) {
   // your code here
+  return Boolean(a);
 };
 
 function isEqual(a, b) {
