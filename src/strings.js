@@ -25,6 +25,7 @@ function firstCharacter (string) {
 
 function firstCharacters (string, n) {
   // your code here
+  return string.slice(0, n);
 };
 
 module.exports = {
