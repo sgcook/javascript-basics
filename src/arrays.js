@@ -1,8 +1,8 @@
 const getNthElement = (index, array) => {
   // your code here
   let newIndex = 0;
-  if (index > array.length) {
-    newIndex = array[index - array.length];
+  if (index >= array.length) {
+    newIndex = index - array.length;
   } else {
     newIndex = index;
   }
@@ -82,6 +82,9 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   // your code here
+  return strings.sort(
+    (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+  );
 };
 
 module.exports = {
