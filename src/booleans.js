@@ -1,6 +1,6 @@
 function negate(a) {
   // your code here
-  return a === false;
+  return !a;
 };
 
 function both(a, b) {
