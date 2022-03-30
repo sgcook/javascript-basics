@@ -7,6 +7,7 @@ const getNthElement = (index, array) => {
     newIndex = index;
   }
   return array[newIndex];
+  // tutor's answer -- return array[index % array.length];
 };
 
 const arrayToCSVString = array => {
@@ -26,9 +27,7 @@ const addToArray = (element, array) => {
 
 const addToArray2 = (element, array) => {
   // your code here
-  const newArray = array.slice();
-  newArray.push(element);
-  return newArray;
+  return [...array, element];
 };
 
 const removeNthElement = (index, array) => {
